@@ -100,18 +100,24 @@ Closure - Example 1 (Easy)
 ========================================================
 */
 
-function newAccount(name, initialBalance) {
-  let balance = initialBalance;
-  function showBalance() {
-    console.log(`Hey ${name}, your balance is ${balance}`);
-  }
-  return showBalance;
-}
+// function newAccount(name, initialBalance) {
+//   let balance = initialBalance;
+//   function showBalance() {
+//     console.log(`Hey ${name}, your balance is ${balance}`);
+//   }
+//   return showBalance;
+// }
 
-newAccount('susan', 500)();
+// newAccount('susan', 500)();
 
-const john = newAccount('John', 300);
-const bob = newAccount('bob', 1000);
+// const john = newAccount('John', 300);
+// const bob = newAccount('bob', 1000);
 
-john();
-bob();
+// john();
+// bob();
+
+/*
+========================================================
+Closure - Example 2 (Hard one)
+========================================================
+*/
