@@ -147,4 +147,9 @@ const john = newAccount('john', 300);
 const bob = newAccount('bob', 500);
 
 john.showBalance();
+john.deposit(400);
+john.withdraw(1400);
+
 bob.showBalance();
+bob.deposit(10000);
+bob.withdraw(20000);
