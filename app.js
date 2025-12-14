@@ -80,11 +80,38 @@ Closure
 -makes private variables with closures
 */
 
-function outer() {
-  function inner() {
-    console.log(`Hello there, secret is: `);
+// function outer() {
+//   function inner() {
+//     console.log(`Hello there, secret is: `);
+//   }
+//   return inner;
+//   inner();
+// }
+// outer()();
+
+// const value = outer();
+// console.log(value);
+
+// value();
+
+/*
+========================================================
+Closure - Example 1 (Easy)
+========================================================
+*/
+
+function newAccount(name, initialBalance) {
+  let balance = initialBalance;
+  function showBalance() {
+    console.log(`Hey ${name}, your balance is ${balance}`);
   }
-  // return outer;
-  inner();
+  return showBalance;
 }
-outer();
+
+newAccount('susan', 500)();
+
+const john = newAccount('John', 300);
+const bob = newAccount('bob', 1000);
+
+john();
+bob();
