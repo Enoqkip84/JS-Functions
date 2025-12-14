@@ -47,7 +47,7 @@ Global namespace, extra steps
 
 /*
 ========================================================
-Hoisting
+HOISTNG 
 ========================================================
 -Function and var declartions are hoisted
 -It is safer to access only after initialized
@@ -74,7 +74,7 @@ Hoisting
 
 /*
 ========================================================
-Closure
+CLOSURE
 ========================================================
 -closure gives you an access to an outer function's scope from an inner function
 -makes private variables with closures
