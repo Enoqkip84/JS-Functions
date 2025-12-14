@@ -122,34 +122,34 @@ Closure - Example 2 (Hard one)
 ========================================================
 */
 
-// function newAccount(name, initialBalance) {
-//   let balance = initialBalance;
-//   function showBalance() {
-//     console.log(`Hey ${name}, your balance is ${balance}`);
-//   }
-//   function deposit(amount) {
-//     balance += amount;
-//     showBalance();
-//   }
-//   function withdraw(amount) {
-//     if (balance < amount) {
-//       console.log(`Hey ${name} your balance is insufficient`);
-//       return;
-//     }
-//     balance -= amount;
-//     showBalance();
-//   }
+function newAccount(name, initialBalance) {
+  let balance = initialBalance;
+  function showBalance() {
+    console.log(`Hey ${name}, your balance is ${balance}`);
+  }
+  function deposit(amount) {
+    balance += amount;
+    showBalance();
+  }
+  function withdraw(amount) {
+    if (balance < amount) {
+      console.log(`Hey ${name} your balance is insufficient`);
+      return;
+    }
+    balance -= amount;
+    showBalance();
+  }
 
-//   return { showBalance: showBalance, deposit: deposit, withdraw: withdraw };
-// }
+  return { showBalance: showBalance, deposit: deposit, withdraw: withdraw };
+}
 
-// const john = newAccount('john', 300);
-// const bob = newAccount('bob', 500);
+const john = newAccount('john', 300);
+const bob = newAccount('bob', 500);
 
-// john.showBalance();
-// john.deposit(400);
-// john.withdraw(1400);
+john.showBalance();
+john.deposit(400);
+john.withdraw(1400);
 
-// bob.showBalance();
-// bob.deposit(10000);
-// bob.withdraw(20000);
+bob.showBalance();
+bob.deposit(10000);
+bob.withdraw(20000);
